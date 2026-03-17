@@ -1,15 +1,22 @@
 {
-  "name": "app",
-  "version": "1.0.50",
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for ecom project",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "nodemon"
   },
+  "keywords": [],
+  "author": "Shiv kumar ojha",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.1",
   "dependencies": {
-    "elysia": "latest"
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
   },
   "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "src/index.js"
+    "@types/express": "^5.0.6",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2"
+  }
 }
