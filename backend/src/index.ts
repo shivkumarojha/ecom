@@ -1,7 +1,10 @@
-import "dotenv/config"
+import "dotenv/config";
 import express from "express";
 
 const app = express();
+
+//middlewares
+app.use(express.json());
 
 app.get("/", (_, res) => {
   return res.status(200).json({ message: "OK" });
